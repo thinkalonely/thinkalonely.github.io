@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.actpi.com/articles/centos-extmail.html</loc>
+    
+    <lastmod>2017-12-07T11:44:39.102Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.actpi.com/articles/pyinstaller.html</loc>
     
     <lastmod>2017-11-14T12:24:35.045Z</lastmod>
