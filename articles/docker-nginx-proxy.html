@@ -441,7 +441,7 @@
 </ul>
 </li>
 <li><p>添加 Docker 官方 GPG key<br><code>curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo &quot;$ID&quot;)/gpg | sudo apt-key add -</code><br>4.设置 源地址</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository \</div><div class="line">   "deb [arch=amd64] https://download.docker.com/linux/$(. /etc/os-release; echo "$ID") \</div><div class="line"><span class="meta">   $</span>(lsb_release -cs) \</div><div class="line">   stable"</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository \</div><div class="line">   "deb [arch=amd64] https://download.docker.com/linux/$(. /etc/os-release; echo "$ID") \</div><div class="line"><span class="meta">   $</span><span class="bash">(lsb_release -cs) \</span></div><div class="line">   stable"</div></pre></td></tr></table></figure>
 </li>
 <li><p>安装 Docker-ce</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install docker-ce</div></pre></td></tr></table></figure>
