@@ -110,7 +110,7 @@
 <meta property="og:site_name" content="行动派博客">
 <meta property="og:description" content="在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。下面记录下当忘记MySQL root 密码的解决办法： 使用 –skip-grant-tables 选项启动 MySQL 服务  skip-grant-tables 选项将使 MySQL 服务器停止权限判断，任何用户都有访问数据库的权力。这个命">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-10T13:40:44.333Z">
+<meta property="og:updated_time" content="2018-03-10T13:48:08.868Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL 忘记 root 用户密码的解决办法">
 <meta name="twitter:description" content="在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。下面记录下当忘记MySQL root 密码的解决办法： 使用 –skip-grant-tables 选项启动 MySQL 服务  skip-grant-tables 选项将使 MySQL 服务器停止权限判断，任何用户都有访问数据库的权力。这个命">
@@ -355,7 +355,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  407
+                  433
                 </span>
               
 
@@ -397,12 +397,11 @@
 <h3 id="mysqld-命令"><a href="#mysqld-命令" class="headerlink" title="mysqld 命令"></a>mysqld 命令</h3><p><code>mysqld --skip-grant-tables</code></p>
 <h3 id="mysqld-nt命令"><a href="#mysqld-nt命令" class="headerlink" title="mysqld-nt命令"></a>mysqld-nt命令</h3><p><code>mysqld-nt --skip-grant-tables</code></p>
 <h3 id="net-命令"><a href="#net-命令" class="headerlink" title="net 命令"></a>net 命令</h3><p><code>net start mysql --skip-grant-tables</code></p></div><br><div class="note for linux"><p>  Linux 操作系统中，使用 mysqld_safe 来启动 MySQL 服务，也可以使用 /etc/init.d/mysql 来启动 MySQL 服务。</p>
-<h3 id="mysqld-safe-命令"><a href="#mysqld-safe-命令" class="headerlink" title="mysqld_safe 命令"></a>mysqld_safe 命令</h3>undefined
-<h3 id="使用-etc-init-mysql-语句"><a href="#使用-etc-init-mysql-语句" class="headerlink" title="使用 /etc/init/mysql 语句"></a>使用 /etc/init/mysql 语句</h3>undefined
-<p>成功启动 MySQL 服务后，就可以使用 root 登陆数据库进行密码的修改了。</p>
+<h3 id="mysqld-safe-命令"><a href="#mysqld-safe-命令" class="headerlink" title="mysqld_safe 命令"></a>mysqld_safe 命令</h3><p><code>mysql_safe --skip-grant-tables user=mysql</code></p>
+<h3 id="使用-etc-init-mysql-语句"><a href="#使用-etc-init-mysql-语句" class="headerlink" title="使用 /etc/init/mysql 语句"></a>使用 /etc/init/mysql 语句</h3><p><code>/etc/init/mysql start --mysqld --skip-grant-tables</code><br>成功启动 MySQL 服务后，就可以使用 root 登陆数据库进行密码的修改了。</p>
 <h2 id="登陆-root-用户，设置新的密码"><a href="#登陆-root-用户，设置新的密码" class="headerlink" title="登陆 root 用户，设置新的密码"></a>登陆 root 用户，设置新的密码</h2><p>  通过上述方式启动 MySQL 服务以后，可以使用 root 用户免密码登陆到 MySQL 控制台。登陆后使用 UPDATE 语句来修改密码。</p>
-<h3 id="登陆-MySQL"><a href="#登陆-MySQL" class="headerlink" title="登陆 MySQL"></a>登陆 MySQL</h3>undefined
-<h3 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h3>undefined</div><br><div class="note "><p>这里必须使用 UPDATE 语句来更新 mysql 数据库的 user 表，不能使用 SET 语句。</p></div></p>
+<h3 id="登陆-MySQL"><a href="#登陆-MySQL" class="headerlink" title="登陆 MySQL"></a>登陆 MySQL</h3><p><code>mysql -u root</code></p>
+<h3 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h3><p><code>UPDATE mysql.user SET password=PASSWORD(&#39;somewords&#39;) WHERE User=&#39;root&#39; AND Host=&#39;localhost&#39;;</code></p></div><br><div class="note "><p>这里必须使用 UPDATE 语句来更新 mysql 数据库的 user 表，不能使用 SET 语句。</p></div></p>
 <h2 id="加载权限表"><a href="#加载权限表" class="headerlink" title="加载权限表"></a>加载权限表</h2><p>  修改完密码之后，必须使用 FLUSH PRIVILEGES 命令来加载权限表。加载权限表之后新密码才开始生效。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">FLUSH PRIVILEGES</div></pre></td></tr></table></figure></p>
 <p>至此，root 用户的密码修改成功，可以使用新的密码来登陆 MySQL 。</p>
 
