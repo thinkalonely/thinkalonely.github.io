@@ -102,18 +102,18 @@
 
 
 
-<meta name="description" content="在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。 下面记录下当忘记MySQL root 密码的解决办法：">
+<meta name="description" content="在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。下面记录下当忘记MySQL root 密码的解决办法： 使用 –skip-grant-tables 选项启动 MySQL 服务  skip-grant-tables 选项将使 MySQL 服务器停止权限判断，任何用户都有访问数据库的权力。这个命">
 <meta name="keywords" content="MySQL, root 密码">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL 忘记 root 用户密码的解决办法">
 <meta property="og:url" content="http://blog.actpi.com/articles/forget-root-passwword.html">
 <meta property="og:site_name" content="行动派博客">
-<meta property="og:description" content="在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。 下面记录下当忘记MySQL root 密码的解决办法：">
+<meta property="og:description" content="在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。下面记录下当忘记MySQL root 密码的解决办法： 使用 –skip-grant-tables 选项启动 MySQL 服务  skip-grant-tables 选项将使 MySQL 服务器停止权限判断，任何用户都有访问数据库的权力。这个命">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-10T13:12:40.295Z">
+<meta property="og:updated_time" content="2018-03-10T13:40:44.333Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL 忘记 root 用户密码的解决办法">
-<meta name="twitter:description" content="在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。 下面记录下当忘记MySQL root 密码的解决办法：">
+<meta name="twitter:description" content="在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。下面记录下当忘记MySQL root 密码的解决办法： 使用 –skip-grant-tables 选项启动 MySQL 服务  skip-grant-tables 选项将使 MySQL 服务器停止权限判断，任何用户都有访问数据库的权力。这个命">
 
 
 
@@ -355,7 +355,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  71
+                  407
                 </span>
               
 
@@ -371,7 +371,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -392,8 +392,19 @@
       
 
       
-        <pre><code>在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。
-</code></pre><p>下面记录下当忘记MySQL root 密码的解决办法：</p>
+        <p>  在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。<br>下面记录下当忘记MySQL root 密码的解决办法：</p>
+<h2 id="使用-–skip-grant-tables-选项启动-MySQL-服务"><a href="#使用-–skip-grant-tables-选项启动-MySQL-服务" class="headerlink" title="使用 –skip-grant-tables 选项启动 MySQL 服务"></a>使用 –skip-grant-tables 选项启动 MySQL 服务</h2><p>  skip-grant-tables 选项将使 MySQL 服务器停止权限判断，任何用户都有访问数据库的权力。这个命令选项是跟在 MySQL 服务的命令后面的。<br><div class="note for windows"><p>  Windows 操作系统中，使用 mysqld、mysqld-nt或者 net start mysql 命令来启动 MySQL 服务。</p>
+<h3 id="mysqld-命令"><a href="#mysqld-命令" class="headerlink" title="mysqld 命令"></a>mysqld 命令</h3><p><code>mysqld --skip-grant-tables</code></p>
+<h3 id="mysqld-nt命令"><a href="#mysqld-nt命令" class="headerlink" title="mysqld-nt命令"></a>mysqld-nt命令</h3><p><code>mysqld-nt --skip-grant-tables</code></p>
+<h3 id="net-命令"><a href="#net-命令" class="headerlink" title="net 命令"></a>net 命令</h3><p><code>net start mysql --skip-grant-tables</code></p></div><br><div class="note for linux"><p>  Linux 操作系统中，使用 mysqld_safe 来启动 MySQL 服务，也可以使用 /etc/init.d/mysql 来启动 MySQL 服务。</p>
+<h3 id="mysqld-safe-命令"><a href="#mysqld-safe-命令" class="headerlink" title="mysqld_safe 命令"></a>mysqld_safe 命令</h3>undefined
+<h3 id="使用-etc-init-mysql-语句"><a href="#使用-etc-init-mysql-语句" class="headerlink" title="使用 /etc/init/mysql 语句"></a>使用 /etc/init/mysql 语句</h3>undefined
+<p>成功启动 MySQL 服务后，就可以使用 root 登陆数据库进行密码的修改了。</p>
+<h2 id="登陆-root-用户，设置新的密码"><a href="#登陆-root-用户，设置新的密码" class="headerlink" title="登陆 root 用户，设置新的密码"></a>登陆 root 用户，设置新的密码</h2><p>  通过上述方式启动 MySQL 服务以后，可以使用 root 用户免密码登陆到 MySQL 控制台。登陆后使用 UPDATE 语句来修改密码。</p>
+<h3 id="登陆-MySQL"><a href="#登陆-MySQL" class="headerlink" title="登陆 MySQL"></a>登陆 MySQL</h3>undefined
+<h3 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h3>undefined</div><br><div class="note "><p>这里必须使用 UPDATE 语句来更新 mysql 数据库的 user 表，不能使用 SET 语句。</p></div></p>
+<h2 id="加载权限表"><a href="#加载权限表" class="headerlink" title="加载权限表"></a>加载权限表</h2><p>  修改完密码之后，必须使用 FLUSH PRIVILEGES 命令来加载权限表。加载权限表之后新密码才开始生效。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">FLUSH PRIVILEGES</div></pre></td></tr></table></figure></p>
+<p>至此，root 用户的密码修改成功，可以使用新的密码来登陆 MySQL 。</p>
 
       
     </div>
@@ -509,8 +520,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <img class="site-author-image" itemprop="image"
@@ -587,6 +607,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-–skip-grant-tables-选项启动-MySQL-服务"><span class="nav-number">1.</span> <span class="nav-text">使用 –skip-grant-tables 选项启动 MySQL 服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#mysqld-命令"><span class="nav-number">1.1.</span> <span class="nav-text">mysqld 命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mysqld-nt命令"><span class="nav-number">1.2.</span> <span class="nav-text">mysqld-nt命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#net-命令"><span class="nav-number">1.3.</span> <span class="nav-text">net 命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mysqld-safe-命令"><span class="nav-number">1.4.</span> <span class="nav-text">mysqld_safe 命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-etc-init-mysql-语句"><span class="nav-number">1.5.</span> <span class="nav-text">使用 /etc/init/mysql 语句</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#登陆-root-用户，设置新的密码"><span class="nav-number">2.</span> <span class="nav-text">登陆 root 用户，设置新的密码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#登陆-MySQL"><span class="nav-number">2.1.</span> <span class="nav-text">登陆 MySQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改密码"><span class="nav-number">2.2.</span> <span class="nav-text">修改密码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加载权限表"><span class="nav-number">3.</span> <span class="nav-text">加载权限表</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -618,7 +654,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
     <span title="Site words total count">
-      7.7k
+      8.0k
     </span>
   
 </div>
