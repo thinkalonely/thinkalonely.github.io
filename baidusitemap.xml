@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://blog.actpi.com/articles/forget-root-passwword.html</loc>
+    <lastmod>2018-03-10T13:12:40.295Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL 忘记 root 用户密码的解决办法</title>
+        <pubTime>2018-01-10T13:05:25.000Z</pubTime>
+        
+        <tag>mysql</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.actpi.com/articles/centos-extmail.html</loc>
     <lastmod>2017-12-07T11:57:05.187Z</lastmod>
     <data>
