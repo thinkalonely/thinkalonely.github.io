@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.actpi.com/tags/index.html</loc>
+    
+    <lastmod>2018-05-10T13:41:56.313Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.actpi.com/articles/winsw.html</loc>
     
     <lastmod>2018-05-10T13:29:44.587Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>http://blog.actpi.com/articles/iis-error.html</loc>
     
     <lastmod>2017-10-12T13:56:47.943Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.actpi.com/tags/index.html</loc>
-    
-    <lastmod>2017-09-29T13:51:50.602Z</lastmod>
     
   </url>
   
