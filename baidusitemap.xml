@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://blog.actpi.com/articles/nginx-index.html</loc>
+    <lastmod>2018-05-10T13:03:07.130Z</lastmod>
+    <data>
+        <display>
+        <title>Nginx 关于 location 的匹配规则</title>
+        <pubTime>2018-02-05T11:58:58.000Z</pubTime>
+        
+        <tag>nginx</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.actpi.com/articles/forget-root-passwword.html</loc>
     <lastmod>2018-03-10T13:48:08.868Z</lastmod>
     <data>

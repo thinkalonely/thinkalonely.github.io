@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="MySQL, root 密码" />
+  <meta name="keywords" content="nginx,location,url 匹配" />
 
 
 
@@ -102,18 +102,18 @@
 
 
 
-<meta name="description" content="在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。下面记录下当忘记MySQL root 密码的解决办法： 使用 –skip-grant-tables 选项启动 MySQL 服务  skip-grant-tables 选项将使 MySQL 服务器停止权限判断，任何用户都有访问数据库的权力。这个命">
-<meta name="keywords" content="MySQL, root 密码">
+<meta name="description" content="关于 location的匹配顺序的常见误区 location 的匹配顺序是“先匹配正则，再匹配普通”。 矫正：location 的匹配顺序其实是“先匹配普通，再匹配正则”。造成这种误解的原因是：正则匹配会覆盖普通匹配。  location 的执行逻辑跟 location 的编辑顺序无关。 矫正：这句话不全对，“普通 location ”的匹配规则是“最大前缀”，因此“普通 location ”的确">
+<meta name="keywords" content="nginx,location,url 匹配">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MySQL 忘记 root 用户密码的解决办法">
-<meta property="og:url" content="http://blog.actpi.com/articles/forget-root-passwword.html">
+<meta property="og:title" content="Nginx 关于 location 的匹配规则">
+<meta property="og:url" content="http://blog.actpi.com/articles/nginx-index.html">
 <meta property="og:site_name" content="行动派博客">
-<meta property="og:description" content="在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。下面记录下当忘记MySQL root 密码的解决办法： 使用 –skip-grant-tables 选项启动 MySQL 服务  skip-grant-tables 选项将使 MySQL 服务器停止权限判断，任何用户都有访问数据库的权力。这个命">
+<meta property="og:description" content="关于 location的匹配顺序的常见误区 location 的匹配顺序是“先匹配正则，再匹配普通”。 矫正：location 的匹配顺序其实是“先匹配普通，再匹配正则”。造成这种误解的原因是：正则匹配会覆盖普通匹配。  location 的执行逻辑跟 location 的编辑顺序无关。 矫正：这句话不全对，“普通 location ”的匹配规则是“最大前缀”，因此“普通 location ”的确">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-10T13:48:08.868Z">
+<meta property="og:updated_time" content="2018-05-10T13:03:07.130Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MySQL 忘记 root 用户密码的解决办法">
-<meta name="twitter:description" content="在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。下面记录下当忘记MySQL root 密码的解决办法： 使用 –skip-grant-tables 选项启动 MySQL 服务  skip-grant-tables 选项将使 MySQL 服务器停止权限判断，任何用户都有访问数据库的权力。这个命">
+<meta name="twitter:title" content="Nginx 关于 location 的匹配规则">
+<meta name="twitter:description" content="关于 location的匹配顺序的常见误区 location 的匹配顺序是“先匹配正则，再匹配普通”。 矫正：location 的匹配顺序其实是“先匹配普通，再匹配正则”。造成这种误解的原因是：正则匹配会覆盖普通匹配。  location 的执行逻辑跟 location 的编辑顺序无关。 矫正：这句话不全对，“普通 location ”的匹配规则是“最大前缀”，因此“普通 location ”的确">
 
 
 
@@ -143,13 +143,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.actpi.com/articles/forget-root-passwword.html"/>
+  <link rel="canonical" href="http://blog.actpi.com/articles/nginx-"/>
 
 
 
 
 
-  <title>MySQL 忘记 root 用户密码的解决办法 | 行动派博客</title>
+  <title>Nginx 关于 location 的匹配规则 | 行动派博客</title>
   
 
 
@@ -276,7 +276,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.actpi.com/articles/forget-root-passwword.html">
+    <link itemprop="mainEntityOfPage" href="http://blog.actpi.com/articles/nginx-index.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="thinkalonely">
@@ -293,7 +293,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">MySQL 忘记 root 用户密码的解决办法</h2>
+          <h2 class="post-title" itemprop="name headline">Nginx 关于 location 的匹配规则</h2>
         
 
         <div class="post-meta">
@@ -305,8 +305,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-10T21:05:25+08:00">
-                2018-01-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-05T19:58:58+08:00">
+                2018-02-05
               </time>
             
 
@@ -324,9 +324,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/articles/forget-root-passwword.html#comments" itemprop="discussionUrl">
+                <a href="/articles/nginx-index.html#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="articles/forget-root-passwword.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="articles/nginx-index.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -355,7 +355,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  433
+                  1,258
                 </span>
               
 
@@ -371,7 +371,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  5
                 </span>
               
             </div>
@@ -392,18 +392,50 @@
       
 
       
-        <p>  在 MySQL 的使用过程中，如果 root 用户密码丢失了，会造成很大的麻烦。但是，可以通过某种特殊的办法登陆到 root 用户下，然后设置新的密码。<br>下面记录下当忘记MySQL root 密码的解决办法：</p>
-<h2 id="使用-–skip-grant-tables-选项启动-MySQL-服务"><a href="#使用-–skip-grant-tables-选项启动-MySQL-服务" class="headerlink" title="使用 –skip-grant-tables 选项启动 MySQL 服务"></a>使用 –skip-grant-tables 选项启动 MySQL 服务</h2><p>  skip-grant-tables 选项将使 MySQL 服务器停止权限判断，任何用户都有访问数据库的权力。这个命令选项是跟在 MySQL 服务的命令后面的。<br><div class="note for windows"><p>  Windows 操作系统中，使用 mysqld、mysqld-nt或者 net start mysql 命令来启动 MySQL 服务。</p>
-<h3 id="mysqld-命令"><a href="#mysqld-命令" class="headerlink" title="mysqld 命令"></a>mysqld 命令</h3><p><code>mysqld --skip-grant-tables</code></p>
-<h3 id="mysqld-nt命令"><a href="#mysqld-nt命令" class="headerlink" title="mysqld-nt命令"></a>mysqld-nt命令</h3><p><code>mysqld-nt --skip-grant-tables</code></p>
-<h3 id="net-命令"><a href="#net-命令" class="headerlink" title="net 命令"></a>net 命令</h3><p><code>net start mysql --skip-grant-tables</code></p></div><br><div class="note for linux"><p>  Linux 操作系统中，使用 mysqld_safe 来启动 MySQL 服务，也可以使用 /etc/init.d/mysql 来启动 MySQL 服务。</p>
-<h3 id="mysqld-safe-命令"><a href="#mysqld-safe-命令" class="headerlink" title="mysqld_safe 命令"></a>mysqld_safe 命令</h3><p><code>mysql_safe --skip-grant-tables user=mysql</code></p>
-<h3 id="使用-etc-init-mysql-语句"><a href="#使用-etc-init-mysql-语句" class="headerlink" title="使用 /etc/init/mysql 语句"></a>使用 /etc/init/mysql 语句</h3><p><code>/etc/init/mysql start --mysqld --skip-grant-tables</code><br>成功启动 MySQL 服务后，就可以使用 root 登陆数据库进行密码的修改了。</p>
-<h2 id="登陆-root-用户，设置新的密码"><a href="#登陆-root-用户，设置新的密码" class="headerlink" title="登陆 root 用户，设置新的密码"></a>登陆 root 用户，设置新的密码</h2><p>  通过上述方式启动 MySQL 服务以后，可以使用 root 用户免密码登陆到 MySQL 控制台。登陆后使用 UPDATE 语句来修改密码。</p>
-<h3 id="登陆-MySQL"><a href="#登陆-MySQL" class="headerlink" title="登陆 MySQL"></a>登陆 MySQL</h3><p><code>mysql -u root</code></p>
-<h3 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h3><p><code>UPDATE mysql.user SET password=PASSWORD(&#39;somewords&#39;) WHERE User=&#39;root&#39; AND Host=&#39;localhost&#39;;</code></p></div><br><div class="note "><p>这里必须使用 UPDATE 语句来更新 mysql 数据库的 user 表，不能使用 SET 语句。</p></div></p>
-<h2 id="加载权限表"><a href="#加载权限表" class="headerlink" title="加载权限表"></a>加载权限表</h2><p>  修改完密码之后，必须使用 FLUSH PRIVILEGES 命令来加载权限表。加载权限表之后新密码才开始生效。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">FLUSH PRIVILEGES</div></pre></td></tr></table></figure></p>
-<p>至此，root 用户的密码修改成功，可以使用新的密码来登陆 MySQL 。</p>
+        <h1 id="关于-location的匹配顺序的常见误区"><a href="#关于-location的匹配顺序的常见误区" class="headerlink" title="关于 location的匹配顺序的常见误区"></a>关于 location的匹配顺序的常见误区</h1><ol>
+<li><p>location 的匹配顺序是“先匹配正则，再匹配普通”。</p>
+<p>矫正：location 的匹配顺序其实是“先匹配普通，再匹配正则”。造成这种误解的原因是：正则匹配会覆盖普通匹配。</p>
+</li>
+<li><p>location 的执行逻辑跟 location 的编辑顺序无关。</p>
+<p>矫正：这句话不全对，“普通 location ”的匹配规则是“最大前缀”，因此“普通 location ”的确与 location 编辑顺序无关；但是“正则 location ”的匹配规则是“顺序匹配，且只要匹配到第一个就停止后面的匹配”；“普通location ”与“正则 location ”之间的匹配顺序是？<br>先匹配普通 location ，再“考虑”匹配正则 location 。注意这里的“考虑”是“可能”的意思，也就是说匹配完“普通 location ”后，有的时候需要继续匹配“正则 location ”，有的时候则不需要继续匹配“正则 location ”。</p>
+</li>
+</ol>
+<p>两种情况下，不需要继续匹配正则 location ：</p>
+<ol>
+<li>当普通 location 前面指定了“ ^~ ”，特别告诉 Nginx 本条普通 location 一旦匹配上，则不需要继续正则匹配；</li>
+<li>当普通location 恰好严格匹配上，不是最大前缀匹配，则不再继续匹配正则。</li>
+</ol>
+<p>总结一句话：  “正则 location 匹配让步普通 location 的严格精确匹配结果；但覆盖普通 location 的最大前缀匹配结果”。</p>
+<h1 id="location-语法规则"><a href="#location-语法规则" class="headerlink" title="location 语法规则"></a>location 语法规则</h1><p><code>location [=|~|~*|^~] /uri/ { … }</code>:</p>
+<ul>
+<li><code>=</code> 开头表示精确匹配</li>
+<li>^~ 开头表示uri以某个常规字符串开头，理解为匹配 url路径即可。nginx不对url做编码，因此请求为/static/20%/aa，可以被规则^~ /static/ /aa匹配到（注意是空格）。</li>
+<li>~ 开头表示区分大小写的正则匹配</li>
+<li>~*  开头表示不区分大小写的正则匹配</li>
+<li>!~和!~*分别为区分大小写不匹配及不区分大小写不匹配 的正则</li>
+<li>/ 通用匹配，任何请求都会匹配到。<br>多个location配置的情况下匹配顺序为（参考资料而来，还未实际验证，试试就知道了，不必拘泥，仅供参考）:<br>首先匹配 =，其次匹配^~, 其次是按文件中顺序的正则匹配，最后是交给 / 通用匹配。当有匹配成功时候，停止匹配，按当前匹配规则处理请求。</li>
+</ul>
+<p>nginx location 官方详解地址:<a href="http://nginx.org/en/docs/http/ngx_http_core_module.html#location" target="_blank" rel="external">http://nginx.org/en/docs/http/ngx_http_core_module.html#location</a></p>
+<p>例子，有如下匹配规则：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">location</span> = / &#123;</div><div class="line">   <span class="comment">#规则A</span></div><div class="line">&#125;</div><div class="line"><span class="attribute">location</span> = /login &#123;</div><div class="line">   <span class="comment">#规则B</span></div><div class="line">&#125;</div><div class="line"><span class="attribute">location</span><span class="regexp"> ^~</span> /static/ &#123;</div><div class="line">   <span class="comment">#规则C</span></div><div class="line">&#125;</div><div class="line"><span class="attribute">location</span> <span class="regexp">~ \.(gif|jpg|png|js|css)$</span> &#123;</div><div class="line">   <span class="comment">#规则D</span></div><div class="line">&#125;</div><div class="line"><span class="attribute">location</span> <span class="regexp">~* \.png$</span> &#123;</div><div class="line">   <span class="comment">#规则E</span></div><div class="line">&#125;</div><div class="line"><span class="attribute">location</span> !<span class="regexp">~ \.xhtml$</span> &#123;</div><div class="line">   <span class="comment">#规则F</span></div><div class="line">&#125;</div><div class="line"><span class="attribute">location</span> !<span class="regexp">~* \.xhtml$</span> &#123;</div><div class="line">   <span class="comment">#规则G</span></div><div class="line">&#125;</div><div class="line"><span class="attribute">location</span> / &#123;</div><div class="line">   <span class="comment">#规则H</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>那么产生的效果如下：</p>
+<ol>
+<li>访问根目录 / ， 比如 <a href="http://localhost/" target="_blank" rel="external">http://localhost/</a> 将匹配 规则A</li>
+<li>访问 <a href="http://localhost/login" target="_blank" rel="external">http://localhost/login</a> 将匹配 规则B，<a href="http://localhost/register" target="_blank" rel="external">http://localhost/register</a> 则匹配 规则H</li>
+<li>访问 <a href="http://localhost/static/a.html" target="_blank" rel="external">http://localhost/static/a.html</a> 将匹配 规则C</li>
+<li>访问 <a href="http://localhost/a.gif" target="_blank" rel="external">http://localhost/a.gif</a>, <a href="http://localhost/b.jpg" target="_blank" rel="external">http://localhost/b.jpg</a> 将匹配 规则D 和 规则E，但是 规则D 顺序优先，规则E 不起作用，而 <a href="http://localhost/static/c.png" target="_blank" rel="external">http://localhost/static/c.png</a> 则优先匹配到 规则C</li>
+<li>访问 <a href="http://localhost/a.PNG" target="_blank" rel="external">http://localhost/a.PNG</a> 则匹配 规则E，而不会匹配 规则D，因为 规则E 不区分大小写。</li>
+<li>访问 <a href="http://localhost/a.xhtml" target="_blank" rel="external">http://localhost/a.xhtml</a> 不会匹配 规则F 和 规则G，<a href="http://localhost/a.XHTML" target="_blank" rel="external">http://localhost/a.XHTML</a> 不会匹配 规则G，因为不区分大小写。规则F，规则G 属于排除法，符合匹配规则但是不会匹配到，所以想想看实际应用中哪里会用到。</li>
+<li>访问 <a href="http://localhost/category/id/1111" target="_blank" rel="external">http://localhost/category/id/1111</a> 则最终匹配到 规则H，因为以上规则都不匹配，这个时候应该是 nginx 转发请求给后端应用服务器，比如 FastCGI（php），tomcat（jsp），nginx 作为方向代理服务器存在。</li>
+</ol>
+<p>所以实际使用中，个人觉得至少有三个匹配规则定义，如下：<br><div class="note "><p>直接匹配网站根，通过域名访问网站首页比较频繁，使用这个会加速处理。<br>这里是直接转发给后端应用服务器了，也可以是一个静态首页</p></div></p>
+<h2 id="第一个必选规则"><a href="#第一个必选规则" class="headerlink" title="第一个必选规则"></a>第一个必选规则</h2><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">location</span> = / &#123;</div><div class="line">    <span class="attribute">proxy_pass</span> http://tomcat:8080/index</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="第二个必选规则"><a href="#第二个必选规则" class="headerlink" title="第二个必选规则"></a>第二个必选规则</h2><div class="note "><p>处理静态文件请求，这是 nginx 作为 <code>http</code> 服务器的强项<br>有两种配置模式，目录匹配或后缀匹配,任选其一或搭配使用</p></div>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">location</span><span class="regexp"> ^~</span> /static/ &#123;</div><div class="line">    <span class="attribute">root</span> /webroot/static/;</div><div class="line">&#125;</div><div class="line"><span class="attribute">location</span> <span class="regexp">~* \.(gif|jpg|jpeg|png|css|js|ico)$</span> &#123;</div><div class="line">    <span class="attribute">root</span> /webroot/res/;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="第三个规则就是通用规则"><a href="#第三个规则就是通用规则" class="headerlink" title="第三个规则就是通用规则"></a>第三个规则就是通用规则</h2><div class="note "><p>用来转发动态请求到后端应用服务器<br>非静态文件请求就默认是动态请求，自己根据实际把握<br>毕竟目前的一些框架的流行，带<code>.php</code>,<code>.jsp</code>后缀的情况很少了</p></div>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">location</span> / &#123;</div><div class="line">    <span class="attribute">proxy_pass</span> http://tomcat:8080/;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>当定义某个网站既有默认首页，又需要转发动态请求到后端服务器的时候，如果不使用如下location 语句指定页面路径<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">location</span> = / &#123;	</div><div class="line">    <span class="attribute">root</span> /path/to/html;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>而是仅使用<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">location</span> / &#123;</div><div class="line">    <span class="attribute">proxy_pass</span> http://tomcat:8080/;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>访问首页会返回<code>404</code>错误代码！</p>
 
       
     </div>
@@ -424,7 +456,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://blog.actpi.com/articles/forget-root-passwword.html" title="MySQL 忘记 root 用户密码的解决办法">http://blog.actpi.com/articles/forget-root-passwword.html</a>
+    <a href="http://blog.actpi.com/articles/nginx-index.html" title="Nginx 关于 location 的匹配规则">http://blog.actpi.com/articles/nginx-index.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -439,7 +471,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/mysql/" rel="tag"><i class="fa fa-tag"></i> mysql</a>
+            <a href="/tags/nginx/" rel="tag"><i class="fa fa-tag"></i> nginx</a>
           
         </div>
       
@@ -452,8 +484,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/articles/centos-extmail.html" rel="next" title="CentOS 6 基于 Postfix Dovecot Extmail 搭建邮件服务器">
-                <i class="fa fa-chevron-left"></i> CentOS 6 基于 Postfix Dovecot Extmail 搭建邮件服务器
+              <a href="/articles/forget-root-passwword.html" rel="next" title="MySQL 忘记 root 用户密码的解决办法">
+                <i class="fa fa-chevron-left"></i> MySQL 忘记 root 用户密码的解决办法
               </a>
             
           </div>
@@ -461,10 +493,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/articles/nginx-index.html" rel="prev" title="Nginx 关于 location 的匹配规则">
-                Nginx 关于 location 的匹配规则 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -619,7 +647,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-–skip-grant-tables-选项启动-MySQL-服务"><span class="nav-number">1.</span> <span class="nav-text">使用 –skip-grant-tables 选项启动 MySQL 服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#mysqld-命令"><span class="nav-number">1.1.</span> <span class="nav-text">mysqld 命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mysqld-nt命令"><span class="nav-number">1.2.</span> <span class="nav-text">mysqld-nt命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#net-命令"><span class="nav-number">1.3.</span> <span class="nav-text">net 命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mysqld-safe-命令"><span class="nav-number">1.4.</span> <span class="nav-text">mysqld_safe 命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-etc-init-mysql-语句"><span class="nav-number">1.5.</span> <span class="nav-text">使用 /etc/init/mysql 语句</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#登陆-root-用户，设置新的密码"><span class="nav-number">2.</span> <span class="nav-text">登陆 root 用户，设置新的密码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#登陆-MySQL"><span class="nav-number">2.1.</span> <span class="nav-text">登陆 MySQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改密码"><span class="nav-number">2.2.</span> <span class="nav-text">修改密码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加载权限表"><span class="nav-number">3.</span> <span class="nav-text">加载权限表</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于-location的匹配顺序的常见误区"><span class="nav-number">1.</span> <span class="nav-text">关于 location的匹配顺序的常见误区</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#location-语法规则"><span class="nav-number">2.</span> <span class="nav-text">location 语法规则</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一个必选规则"><span class="nav-number">2.1.</span> <span class="nav-text">第一个必选规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二个必选规则"><span class="nav-number">2.2.</span> <span class="nav-text">第二个必选规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三个规则就是通用规则"><span class="nav-number">2.3.</span> <span class="nav-text">第三个规则就是通用规则</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -805,9 +833,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://blog.actpi.com/articles/forget-root-passwword.html';
-          this.page.identifier = 'articles/forget-root-passwword.html';
-          this.page.title = 'MySQL 忘记 root 用户密码的解决办法';
+          this.page.url = 'http://blog.actpi.com/articles/nginx-index.html';
+          this.page.identifier = 'articles/nginx-index.html';
+          this.page.title = 'Nginx 关于 location 的匹配规则';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';
