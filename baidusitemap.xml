@@ -4,6 +4,27 @@
 
     
   <url>
+    <loc>http://blog.actpi.com/articles/winsw.html</loc>
+    <lastmod>2018-05-10T13:29:44.587Z</lastmod>
+    <data>
+        <display>
+        <title>把 Nginx 创建为 Windows 服务</title>
+        <pubTime>2017-10-26T12:59:43.000Z</pubTime>
+        
+        <tag>nginx</tag>
+         
+        <tag>minsw</tag>
+         
+        <tag>windows 服务</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.actpi.com/articles/nginx-index.html</loc>
     <lastmod>2018-05-10T13:26:09.873Z</lastmod>
     <data>
@@ -86,27 +107,6 @@
         <tag>docker</tag>
          
         <tag>nginx-proxy</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.actpi.com/articles/winsw.html</loc>
-    <lastmod>2017-10-27T13:15:10.069Z</lastmod>
-    <data>
-        <display>
-        <title>把 Nginx 创建为 Windows 服务</title>
-        <pubTime>2017-10-26T12:59:43.000Z</pubTime>
-        
-        <tag>minsw</tag>
-         
-        <tag>windows 服务</tag>
-         
-        <tag>Nginx</tag>
          
          
            

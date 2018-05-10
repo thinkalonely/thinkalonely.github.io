@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.actpi.com/articles/winsw.html</loc>
+    
+    <lastmod>2018-05-10T13:29:44.587Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.actpi.com/articles/nginx-index.html</loc>
     
     <lastmod>2018-05-10T13:26:09.873Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>http://blog.actpi.com/articles/docker-nginx-proxy.html</loc>
     
     <lastmod>2017-11-12T13:12:52.802Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.actpi.com/articles/winsw.html</loc>
-    
-    <lastmod>2017-10-27T13:15:10.069Z</lastmod>
     
   </url>
   
