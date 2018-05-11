@@ -3,6 +3,23 @@
 
 
     
+  <url>
+    <loc>http://blog.actpi.com/articles/proxy-pass.html</loc>
+    <lastmod>2018-05-11T14:38:38.487Z</lastmod>
+    <data>
+        <display>
+        <title>nginx proxy_pass后的url加和不加反斜杠‘/’的区别</title>
+        <pubTime>2018-02-11T14:07:35.000Z</pubTime>
+        
+        <tag>nginx</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://blog.actpi.com/articles/winsw.html</loc>
