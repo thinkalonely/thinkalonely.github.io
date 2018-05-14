@@ -4,6 +4,25 @@
 
     
   <url>
+    <loc>http://blog.actpi.com/articles/oracle-install.html</loc>
+    <lastmod>2018-05-14T13:31:12.710Z</lastmod>
+    <data>
+        <display>
+        <title>centos 7 安装oracel 12c</title>
+        <pubTime>2018-05-14T11:54:27.000Z</pubTime>
+        
+        <tag>oracle</tag>
+         
+        <tag>centos</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.actpi.com/articles/proxy-pass.html</loc>
     <lastmod>2018-05-11T14:38:38.487Z</lastmod>
     <data>
@@ -29,11 +48,11 @@
         <title>把 Nginx 创建为 Windows 服务</title>
         <pubTime>2017-10-26T12:59:43.000Z</pubTime>
         
+        <tag>nginx</tag>
+         
         <tag>minsw</tag>
          
         <tag>windows 服务</tag>
-         
-        <tag>nginx</tag>
          
          
            

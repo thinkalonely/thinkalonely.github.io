@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.actpi.com/articles/oracle-install.html</loc>
+    
+    <lastmod>2018-05-14T13:31:12.710Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.actpi.com/articles/proxy-pass.html</loc>
     
     <lastmod>2018-05-11T14:38:38.487Z</lastmod>
