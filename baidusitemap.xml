@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://blog.actpi.com/articles/strptime.html</loc>
-    <lastmod>2018-05-15T14:06:30.873Z</lastmod>
+    <lastmod>2018-05-15T14:46:00.085Z</lastmod>
     <data>
         <display>
         <title>Python 把含有 TZ（UTC时间）的字符串 str 转换为 datetime 日期类型</title>
