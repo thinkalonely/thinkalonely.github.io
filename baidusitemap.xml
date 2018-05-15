@@ -4,6 +4,25 @@
 
     
   <url>
+    <loc>http://blog.actpi.com/articles/strptime.html</loc>
+    <lastmod>2018-05-15T14:06:30.873Z</lastmod>
+    <data>
+        <display>
+        <title>Python 把含有 TZ（UTC时间）的字符串 str 转换为 datetime 日期类型</title>
+        <pubTime>2018-03-05T12:59:00.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>格式转换</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.actpi.com/articles/oracle-install.html</loc>
     <lastmod>2018-05-15T12:49:12.789Z</lastmod>
     <data>
