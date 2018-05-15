@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.actpi.com/articles/oracle-install.html</loc>
+    <loc>http://blog.actpi.com/articles/nginx-index.html</loc>
     
-    <lastmod>2018-05-14T13:31:12.710Z</lastmod>
+    <lastmod>2018-05-14T23:56:21.012Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.actpi.com/articles/proxy-pass.html</loc>
     
-    <lastmod>2018-05-11T14:38:38.487Z</lastmod>
+    <lastmod>2018-05-14T23:55:30.570Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.actpi.com/articles/oracle-install.html</loc>
+    
+    <lastmod>2018-05-14T23:55:15.529Z</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>http://blog.actpi.com/articles/winsw.html</loc>
     
     <lastmod>2018-05-10T13:29:44.587Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.actpi.com/articles/nginx-index.html</loc>
-    
-    <lastmod>2018-05-10T13:26:09.873Z</lastmod>
     
   </url>
   

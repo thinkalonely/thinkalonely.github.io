@@ -4,16 +4,14 @@
 
     
   <url>
-    <loc>http://blog.actpi.com/articles/oracle-install.html</loc>
-    <lastmod>2018-05-14T13:31:12.710Z</lastmod>
+    <loc>http://blog.actpi.com/articles/nginx-index.html</loc>
+    <lastmod>2018-05-14T23:56:21.012Z</lastmod>
     <data>
         <display>
-        <title>centos 7 安装oracel 12c</title>
-        <pubTime>2018-05-14T11:54:27.000Z</pubTime>
+        <title>Nginx 关于 location 的匹配规则</title>
+        <pubTime>2018-02-05T11:58:58.000Z</pubTime>
         
-        <tag>oracle</tag>
-         
-        <tag>centos</tag>
+        <tag>nginx</tag>
          
          
            
@@ -24,13 +22,32 @@
     
   <url>
     <loc>http://blog.actpi.com/articles/proxy-pass.html</loc>
-    <lastmod>2018-05-11T14:38:38.487Z</lastmod>
+    <lastmod>2018-05-14T23:55:30.570Z</lastmod>
     <data>
         <display>
         <title>nginx proxy_pass后的url加和不加反斜杠‘/’的区别</title>
         <pubTime>2018-02-11T14:07:35.000Z</pubTime>
         
         <tag>nginx</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.actpi.com/articles/oracle-install.html</loc>
+    <lastmod>2018-05-14T23:55:15.529Z</lastmod>
+    <data>
+        <display>
+        <title>centos 7 安装oracel 12c</title>
+        <pubTime>2018-05-14T11:54:27.000Z</pubTime>
+        
+        <tag>oracle</tag>
+         
+        <tag>centos</tag>
          
          
            
@@ -53,23 +70,6 @@
         <tag>minsw</tag>
          
         <tag>windows 服务</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.actpi.com/articles/nginx-index.html</loc>
-    <lastmod>2018-05-10T13:26:09.873Z</lastmod>
-    <data>
-        <display>
-        <title>Nginx 关于 location 的匹配规则</title>
-        <pubTime>2018-02-05T11:58:58.000Z</pubTime>
-        
-        <tag>nginx</tag>
          
          
            
