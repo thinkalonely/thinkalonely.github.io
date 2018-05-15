@@ -4,6 +4,25 @@
 
     
   <url>
+    <loc>http://blog.actpi.com/articles/oracle-install.html</loc>
+    <lastmod>2018-05-15T12:49:12.789Z</lastmod>
+    <data>
+        <display>
+        <title>centos 7 安装oracel 12c</title>
+        <pubTime>2018-05-14T11:54:27.000Z</pubTime>
+        
+        <tag>oracle</tag>
+         
+        <tag>centos</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.actpi.com/articles/nginx-index.html</loc>
     <lastmod>2018-05-14T23:56:21.012Z</lastmod>
     <data>
@@ -29,25 +48,6 @@
         <pubTime>2018-02-11T14:07:35.000Z</pubTime>
         
         <tag>nginx</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.actpi.com/articles/oracle-install.html</loc>
-    <lastmod>2018-05-14T23:55:15.529Z</lastmod>
-    <data>
-        <display>
-        <title>centos 7 安装oracel 12c</title>
-        <pubTime>2018-05-14T11:54:27.000Z</pubTime>
-        
-        <tag>oracle</tag>
-         
-        <tag>centos</tag>
          
          
            
