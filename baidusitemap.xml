@@ -4,6 +4,27 @@
 
     
   <url>
+    <loc>http://blog.actpi.com/articles/centos-extmail.html</loc>
+    <lastmod>2018-12-08T13:39:03.690Z</lastmod>
+    <data>
+        <display>
+        <title>CentOS 7 基于 Postfix Dovecot Extmail 搭建邮件服务器</title>
+        <pubTime>2017-12-05T11:42:16.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>邮件服务</tag>
+         
+        <tag>Postfix</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.actpi.com/articles/strptime.html</loc>
     <lastmod>2018-05-15T14:46:00.085Z</lastmod>
     <data>
@@ -106,25 +127,6 @@
         <pubTime>2018-01-10T13:05:25.000Z</pubTime>
         
         <tag>mysql</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.actpi.com/articles/centos-extmail.html</loc>
-    <lastmod>2017-12-07T11:57:05.187Z</lastmod>
-    <data>
-        <display>
-        <title>CentOS 6 基于 Postfix Dovecot Extmail 搭建邮件服务器</title>
-        <pubTime>2017-12-05T11:42:16.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>邮件服务</tag>
          
          
            

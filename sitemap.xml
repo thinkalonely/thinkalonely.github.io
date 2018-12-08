@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.actpi.com/articles/centos-extmail.html</loc>
+    
+    <lastmod>2018-12-08T13:39:03.690Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.actpi.com/articles/strptime.html</loc>
     
     <lastmod>2018-05-15T14:46:00.085Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://blog.actpi.com/articles/forget-root-passwword.html</loc>
     
     <lastmod>2018-03-10T13:48:08.868Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.actpi.com/articles/centos-extmail.html</loc>
-    
-    <lastmod>2017-12-07T11:57:05.187Z</lastmod>
     
   </url>
   
